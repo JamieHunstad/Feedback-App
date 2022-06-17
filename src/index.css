@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --titleText: "Helvetica";
+    --mainText: "Helvetica";
+    --colorOne: #57ff9d ;
+    --colorTwo: #002c23;
+    --colorThree: #027424;
+
+}
+body{
+    background-color: var(--colorTwo);
+    color: black;
+}
+
+h2{
+    font-weight: 100;
+}
+
+
+header{
+    padding: 10px;
+    background-color: var(--colorOne);
+    color: var(--colorThree);
+    text-align: center;
+    font-family: var(--titleText);
+}
+
+.card{
+    background-color: white;
+    padding: 20px 0px;
+    margin: 10px 75px;
+    position: relative;
+    text-align: center;
+}
+.num-display{
+    position: absolute;
+    top: 1px;
+    left: 5px;
+    color: red;
+
+}
+.text-display{
+    color: blue;
+}
+.delete-btn{
+    position: absolute;
+    top: 1px;
+    right: 5px;
+    color: red;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.feedback-stats {  
+    display: flex;
+    margin: 10px 75px;
+    font-family: var(--mainText);
+}
+.feedback-stats-review_number{
+    display:flex;
+    width: 50%;
+    
+}
+.feedback-stats-rating{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+
+}
+.form-container{
+    margin-bottom:40px;
+}
+.form-question{
+    color: grey;
+    font-size: 16px;
+    font-family: var(--mainText);
+    margin-bottom: 10px;
+}
+.form-input{
+    width: 300px;
+    padding:5px;
+}
+.btn{
+padding: 5px;
+margin-left: 10px;
+width:80px;
+}
+.btn-primary{
+    background-color: blue;
+    color:white;
+}
+.btn:disabled{
+    background-color: grey;
+}
+.message{
+    color:black;
+}
+.rating{
+    display:flex;
+    justify-content: center;
+    list-style: none;
+}
+.rating li{
+
+    margin:0px 5px;
+}
+.about-link{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    opacity: 50%;
+    transition: .2s;
+}
+.about-link a{
+    color: var(--colorOne);
+    font-family: var(--titleText);
+    text-decoration: none;
+}
+.about-link:hover{
+    opacity: 1;
+}
+.edit{
+    position: absolute;
+    top: 1px;
+    right: 25px;
+    color: purple;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
